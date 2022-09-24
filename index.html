@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  <head>
+    <body>
+      <div class= "heading">
+        <div class="container">
+          <img class="img" src="https://i.postimg.cc/fbzgjGvf/wepik-blue-restaurant-logo-2022724-122144.jpg" alt="hotel-rastaurant logo" />
+          <h1 id="title">Hotel-Restaurant Food Survey</h1>
+          <h2 id="sub-title"><strong>OUR #1 PRIORITY</strong><br> Is Our Customers' Satisfaction</h2>
+          <p id="description">Making Your Holiday Special Is What We Do BEST!</p>
+         </div>
+      </div>
+      <form id="survey-form">
+        <div class="personal-info container">
+          <ul>
+            <li><label for="name" id="name-label">Name: </label><input type="text" class="personal-info__data" id="name" name="name" placeholder="  Full Name" required /></li>
+            <li><label for="email" id="email-label">Email: </label><input type="email" class="personal-info__data" id="email"  name="email"  placeholder="  example@email.com" required /></li>
+            <li><label for="number" id="number-label">Age: </label><input type="number" class="personal-info__data" id="number" name="age" min="13" max="101" placeholder="  38" required /></li>
+         </div>
+        </div>
+         <div class="item"></div>
+         <div class="wrapper"> 
+            <div class="question1"> 
+              <div class="container">
+                <h3>Which location are you currently staying at?</h3>
+                <select id="dropdown" name="hotel-location">
+                  <option value="0">Choose Location</option>
+                  <option value="1">New York</option>
+                  <option value="1">London</option>
+                  <option value="1">Amsterdam</option>
+                  <option value="1">Berlin</option>
+                  <option value="1">Paris</option>
+                  <option value="1">Brussels</option>
+                  <option value="1">Toronto</option>
+                  <option value="1">Sydney</option>
+                  <option value="1">Singapore</option>
+                  <option value="1">Zurich</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <div class="question2">
+              <div class="container">
+                <h3>How often do you dine at our hotel's restaurant?</h3>
+                <select name="often" id="dropdown">
+                  <option value="0">Choose an option</option>
+                  <option value="1">Never</option>
+                  <option value="1">Almost never</option>
+                  <option value="1">Somewhat often</option>
+                  <option value="1">Frequently</option>
+                  <option value="1">All the time</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item"></div>
+          <div class="container">
+            <div class="options">
+              <fieldset>
+                <legend><h3>What is the most important part of a culinary expirience for you? (choose one)</h3></legend>
+                <ul class="list"> 
+                  <li><label for="food">Food <input type="radio" name="new-options" id="food" value="food"></label></li>
+                  <li><label for="atmosphere">Atmosphere <input type="radio" name="new-options" id="atmospere" value="atmosphere"></label></li>
+                  <li><label for="staff">Friendly Staff <input type="radio" name="new-options" id="staff" value="staff"></label></li>
+                </ul>
+              </fieldset>
+            </div> 
+         </div> 
+         <div class="container">
+       <img class="imgfood" src="https://images.pexels.com/photos/2814828/pexels-photo-2814828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lots of food">
+       </div>
+       <div class="item"></div>
+       <div class="container diet">
+         <h3>What are the cuisines would you like to see in our menu?</h3>
+         <ul class="preferences">
+           <li><label for="indian">Indian   <input type= "checkbox" id="indian" name="preference" value="indian"></label></li>
+           <li><label for="ethiopian">Ethiopian   <input type= "checkbox" id="ethiopian" name="preference" value="ethiopian"></label></li>
+          <li><label for="greek">Greek   <input type= "checkbox" id="greek" name="preference" value="greek"></label></li>
+          <li><label for="turkish">Turkish   <input type= "checkbox" id="turkish" name="preference" value="turkish"></label></li>
+          <li><label for="vietnamese">Vietnamese   <input type= "checkbox" id="vietnamese" name="preference" value="vietnamese"></label></li>
+          <li><label for="other">Other   <input type= "checkbox" id="other" name="preference" value="other"></label></li>
+        </ul>
+      </div>
+        <div class="item"></div>
+      <div class="container">
+        <footer class="comments">
+          <label for="comments">Is there something else you would like to see? Thank you for feedback!</label>
+          <textarea id="comments" placeholder="I would love to see..."></textarea>
+          <button type="submit" id="submit" value="submit">Submit</button>
+        </footer>
+      </div>
+    </div>
+      </form>
+    </body>
+</html>
